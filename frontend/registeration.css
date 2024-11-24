@@ -1,0 +1,88 @@
+:root {
+    --primary-blue: #3D52A0; 
+    --hover-blue: #24325b; 
+    --border-blue: #8697C4; 
+    --background-blue: #ADBBDA; 
+    --lightest-blue: #EDE8F5; 
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--lightest-blue); 
+    color: var(--primary-blue); 
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 400px;
+    margin: 15px auto;
+    background-color: var(--background-blue); 
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-blue); 
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary-blue); 
+}
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid var(--border-blue);
+    border-radius: 4px;
+    background-color: var(--lightest-blue); 
+    color: var(--primary-blue); 
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-blue); 
+    color: var(--lightest-blue); 
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--hover-blue); 
+}
+#error-message {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+#role {
+    padding: 8px 12px;
+    width: 100%;
+    font-size: 16px;
+    background-color: var(--lightest-blue); 
+    color: var(--primary-blue); 
+    border: 1px solid var(--border-blue); 
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+#role:hover {
+    border-color: var(--hover-blue); 
+}
+
+#role option {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: var(--lightest-blue); 
+    color: var(--primary-blue);
+}
+.navigation_link {
+    text-decoration: none;
+    color: var(--hover-blue); 
+}

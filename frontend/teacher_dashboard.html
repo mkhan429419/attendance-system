@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="teacher_dashboard.css" />
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <h1>Teacher Dashboard</h1>
+      <button class="logout-btn">
+        <a href="../backend/logout.php">Log Out</a>
+      </button>
+    </header>
+    <main class="dashboard-main">
+      <h2>Attendance Sessions</h2>
+      <button class="create_class">Create Class</button>
+      <div class="class-cards" id="classCards"></div>
+    </main>
+    <footer class="dashboard-footer">
+      <p>&copy; 2024 NUST Web Engineering Lab</p>
+    </footer>
+    <div class="modal">
+      <form class="createClassForm" id="createClassForm">
+        <button type="button" class="close-btn">X</button>
+        <label for="classname">Class Name:</label>
+        <input
+          type="text"
+          id="classname"
+          name="classname"
+          required
+        /><br /><br />
+        <label for="starttime">Start Time:</label>
+        <input
+          type="time"
+          id="starttime"
+          name="starttime"
+          required
+        /><br /><br />
+        <label for="endtime">End Time:</label>
+        <input type="time" id="endtime" name="endtime" required /><br /><br />
+        <button type="submit">Create Class</button>
+      </form>
+    </div>
+    <script src="teacher_dashboard.js"></script>
+  </body>
+</html>

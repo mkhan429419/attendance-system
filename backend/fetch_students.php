@@ -6,7 +6,6 @@ if ($_SESSION['role'] !== 'teacher') {
     http_response_code(403);
     exit;
 }
-
 $classId = $_GET['classid'];
 $query = $pdo->prepare("
     SELECT u.id, u.fullname 

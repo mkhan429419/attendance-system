@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="registeration.css" />
+  </head>
+  <body>
+    <h2>Welcome, create your school account</h2>
+    <div class="container">
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="role">Role:</label>
+          <select id="role" name="role" required>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+          </select>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+      <div id="error-message" style="color: red; display: none">
+        <p>Passwords do not match or there was an error. Please try again.</p>
+      </div>
+      <p>
+        Already have an account?<a href="login.html" class="navigation_link"
+          >Sign in</a
+        >
+      </p>
+    </div>
+    <script src="registeration.js"></script>
+  </body>
+</html>
